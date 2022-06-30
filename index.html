@@ -7,29 +7,28 @@
   </head>
   <body>
     <!-- Header starts here -->
-    <header class="w-full h-[100vh]">
-      <img
-        class="overflow-hidden h-full object-cover w-full"
-        src="./images/Header.jpg"
-        alt="Header image"
-      />
+    <div class="w-full h-[100vh] z-1">
       <div
-        class="place-content-center flex flex-col absolute top-0 h-full object-cover bg-gray-900/80 w-full"
+        class="place-content-center flex flex-col top-0 h-full bg-cover bg-[url('./images/Header.jpg')] w-full"
       >
-        <p class="self-center text-2xl mb-2 font-bold text-white">
-          WE PROVIDE EVERYTHING
-        </p>
-        <p class="self-center text-5xl font-bold text-white">
-          <span class="text-yellow-400">INTERIOR</span>
-          <span>DESIGNERS</span>
-        </p>
-        <button
-          class="mt-8 font-bold bg-white w-40 p-3 rounded-lg text-yellow-400 self-center hover:bg-yellow-400 hover:text-white"
+        <div
+          class="flex flex-col h-full justify-center content-center bg-gray-900/80"
         >
-          Discover More
-        </button>
+          <p class="self-center text-2xl mb-2 font-bold text-white">
+            WE PROVIDE EVERYTHING
+          </p>
+          <p class="self-center text-5xl font-bold text-white">
+            <span class="text-yellow-400">INTERIOR</span>
+            <span>DESIGNERS</span>
+          </p>
+          <button
+            class="mt-8 font-bold bg-white w-40 p-3 rounded-lg text-yellow-400 self-center hover:bg-yellow-400 hover:text-white"
+          >
+            Discover More
+          </button>
+        </div>
       </div>
-    </header>
+    </div>
     <!-- Header ends here -->
 
     <!-- Nav starts here  -->
@@ -68,13 +67,13 @@
     <!-- Nav ends here  -->
 
     <!-- Search card -->
-    <div class="flex place-content-center">
-      <ul
-        class="flex top-[40rem] p-10 rounded-lg bg-white absolute flex-cols-4 gap-40 text-xl font-bold"
-      >
+    <div
+      class="flex flex-col items-center mx-40 shadow-2xl rounded-2xl h-80 mt-[-4rem]"
+    >
+      <ul class="flex bg-white h-40 gap-20 text-xl font-bold p-20 rounded-2xl">
         <li>
           Search Works by Title
-          <div class="font-light text-lg mt-5 border-2 p-2 rounded">
+          <div class="font-light text-lg mt-5 border-2 p-2 flex-col rounded">
             <input
               placeholder="Type any work title..."
               type="text"
@@ -102,7 +101,79 @@
           </div>
         </li>
       </ul>
-      <button class="bg-black">Search</button>
+      <button
+        class="bg-yellow-400 mt-[4rem] text-white w-[60rem] p-2 rounded-lg"
+      >
+        Search Now
+      </button>
+    </div>
+
+    <!-- Seach card ends hree  -->
+
+    <!-- main content starts here  -->
+    <div class="mt-40 grid grid-cols-2 mx-40">
+      <!-- heading here  -->
+      <main class="flex flex-col">
+        <div class="font-bold text-4xl">
+          <h1>EXPLORE SOME OF OUR LATEST</h1>
+        </div>
+        <div class="text-yellow-400 text-4xl font-bold">
+          <h1>INTERIOR DESIGN WORK.</h1>
+        </div>
+        <!-- heading ends here  -->
+
+        <div class="w-60 md:w-[40rem] mt-4 p-2 rounded-2xl">
+          <img
+            class="object-cover rounded-xl"
+            src="./images//potrait.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="text-4xl font-bold mt-40">
+          <h1>CHECK OUT WHATS TRENDING IN</h1>
+          <h1 class="text-yellow-400">OUR INTERIOR WORK.</h1>
+        </div>
+        <div class="mt-10">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto
+            inventore magni nobis cum, ipsa quaerat sed dolore laudantium
+            officiis, quisquam sit temporibus nostrum quia laboriosam fugiat
+            sapiente laborum hic.
+          </p>
+          <button
+            class="mt-8 font-bold bg-yellow-400 w-40 p-3 rounded-lg self-center hover:bg-yellow-500"
+          >
+            Discover More
+          </button>
+        </div>
+        <div>
+          <div class="text-4xl font-bold mt-40">
+            <h1>DON'T BE HESITATED</h1>
+            <h1 class="text-yellow-400">TALK TO US NOW!</h1>
+          </div>
+          <div class="grid grid-cols-2 mt-6">
+            <ul>
+              <li>
+                <input class="border-2 m-3 p-1" type="text" name="" id="" />
+              </li>
+              <li>
+                <input class="border-2 m-3 p-1" type="text" name="" id="" />
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <input class="border-2 m-3 p-1" type="text" name="" id="" />
+              </li>
+              <li>
+                <input class="border-2 m-3 p-1" type="text" name="" id="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <main>This is second column</main>
     </div>
   </body>
 </html>
